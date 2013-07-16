@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.0.patched.for.padrino
+    removed rails specific code and tests
+
 ## 1.4.0
 
 * Added support for MongoMapper ORM (thanks to [Julio Olivera](https://github.com/julioolvr)) [PR](https://github.com/pokonski/public_activity/pull/101)

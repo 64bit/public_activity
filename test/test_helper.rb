@@ -110,8 +110,3 @@ when :mongo_mapper
   end
 end
 
-class ViewSpec < MiniTest::Spec
-  include ActiveSupport::Testing::SetupAndTeardown
-
-end
-MiniTest::Spec.register_spec_type(/Rendering$/, ViewSpec)

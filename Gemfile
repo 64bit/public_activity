@@ -1,9 +1,8 @@
 ENV['PA_ORM'] ||= 'active_record'
-source ENV["FLO_GEM_SERVER"] || "http://erp-deb-ci-vm2.corp.flipkart.com"
+source "https://rubygems.org"
 gemspec
 
 gem 'actionpack', '>= 3.0.0'
-gem 'railties', '>= 3.0.0'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.7'
