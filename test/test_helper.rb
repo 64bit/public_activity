@@ -112,6 +112,6 @@ end
 
 class ViewSpec < MiniTest::Spec
   include ActiveSupport::Testing::SetupAndTeardown
-  include ActionView::TestCase::Behavior
+
 end
 MiniTest::Spec.register_spec_type(/Rendering$/, ViewSpec)

@@ -149,20 +149,5 @@ describe PublicActivity::Common do
   # no key implicated or given
   specify { ->{subject.prepare_settings}.must_raise PublicActivity::NoKeyProvided }
 
-  describe 'resolving values' do
-    it 'allows procs with models and controllers' do
-      context = mock('context')
-      context.expects(:accessor).times(2).returns(5)
-      controller = mock('controller')
-      controller.expects(:current_user).returns(:cu)
-      PublicActivity.set_controller(controller)
-      p = proc {|controller, model|
-        assert_equal :cu, controller.current_user
-        assert_equal 5, model.accessor
-      }
-      PublicActivity.resolve_value(context, p)
-      PublicActivity.resolve_value(context, :accessor)
-    end
-  end
 
 end

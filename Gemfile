@@ -1,5 +1,5 @@
 ENV['PA_ORM'] ||= 'active_record'
-source "https://rubygems.org"
+source ENV["FLO_GEM_SERVER"] || "http://erp-deb-ci-vm2.corp.flipkart.com"
 gemspec
 
 gem 'actionpack', '>= 3.0.0'

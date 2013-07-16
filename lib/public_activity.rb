@@ -18,7 +18,6 @@ module PublicActivity
   autoload :Creation,     'public_activity/actions/creation.rb'
   autoload :Deactivatable,'public_activity/roles/deactivatable.rb'
   autoload :Destruction,  'public_activity/actions/destruction.rb'
-  autoload :Renderable
   autoload :Tracked,      'public_activity/roles/tracked.rb'
   autoload :Update,       'public_activity/actions/update.rb'
   autoload :VERSION
@@ -63,6 +62,3 @@ module PublicActivity
     end
   end
 end
-
-require 'public_activity/utility/store_controller'
-require 'public_activity/utility/view_helpers'

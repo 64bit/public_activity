@@ -11,7 +11,7 @@ module PublicActivity
     when Symbol
       context.__send__(thing)
     when Proc
-      thing.call(PublicActivity.get_controller, context)
+      thing.call(nil, context)
     else
       thing
     end
