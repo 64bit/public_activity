@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   end
 
   s.add_dependency 'i18n', '>= 0.5.0'
+  s.add_dependency 'actionpack', '3.2.10'
 end
